@@ -147,7 +147,9 @@ app_license = "mit"
 
 # Scheduled Tasks
 # ---------------
-
+fixtures = [
+        "Server Script"
+    ]
 # scheduler_events = {
 # 	"all": [
 # 		"studywave.tasks.all"
@@ -241,4 +243,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
