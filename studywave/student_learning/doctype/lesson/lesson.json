@@ -1,51 +1,55 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:course_name",
- "creation": "2025-11-26 13:20:44.000738",
+ "autoname": "format: {course_name} - {topic}",
+ "creation": "2025-11-28 10:47:40.620809",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "course_name",
-  "mentor",
-  "enroll",
-  "lesson"
+  "topic",
+  "topic_overview",
+  "practice_section",
+  "question"
  ],
  "fields": [
   {
-   "fieldname": "course_name",
+   "fieldname": "topic",
    "fieldtype": "Data",
+   "label": "Topic"
+  },
+  {
+   "fieldname": "topic_overview",
+   "fieldtype": "Text",
+   "label": "Topic Overview"
+  },
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Link",
    "label": "Course Name",
+   "options": "Course",
    "unique": 1
   },
   {
-   "fieldname": "mentor",
-   "fieldtype": "Table MultiSelect",
-   "label": "Mentor",
-   "options": "Course User Table",
-   "read_only": 1
+   "fieldname": "practice_section",
+   "fieldtype": "Section Break",
+   "label": "Practice"
   },
   {
-   "fieldname": "enroll",
-   "fieldtype": "Table MultiSelect",
-   "label": "Enroll",
-   "options": "Course User Table"
-  },
-  {
-   "fieldname": "lesson",
+   "fieldname": "question",
    "fieldtype": "Table",
-   "label": "Lesson",
-   "options": "Lesson Table"
+   "label": "Question",
+   "options": "Quiz Table"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-28 11:05:06.631651",
+ "modified": "2025-11-28 12:59:14.314442",
  "modified_by": "Administrator",
  "module": "Student Learning",
- "name": "Course",
- "naming_rule": "By fieldname",
+ "name": "Lesson",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -67,7 +71,8 @@
    "read": 1,
    "report": 1,
    "role": "Mentee",
-   "share": 1
+   "share": 1,
+   "write": 1
   },
   {
    "create": 1,

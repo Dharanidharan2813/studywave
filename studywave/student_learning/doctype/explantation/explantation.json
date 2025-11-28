@@ -1,25 +1,35 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:topic",
  "creation": "2025-11-26 13:22:03.280692",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_sjri"
+  "topic",
+  "explaintion"
  ],
  "fields": [
   {
-   "fieldname": "section_break_sjri",
-   "fieldtype": "Section Break"
+   "fieldname": "topic",
+   "fieldtype": "Data",
+   "label": "Topic",
+   "unique": 1
+  },
+  {
+   "fieldname": "explaintion",
+   "fieldtype": "Small Text",
+   "label": "Explaintion"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-26 13:22:03.280692",
+ "modified": "2025-11-28 12:28:51.301633",
  "modified_by": "Administrator",
  "module": "Student Learning",
  "name": "Explantation",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
