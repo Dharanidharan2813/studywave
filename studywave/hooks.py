@@ -119,6 +119,7 @@ app_license = "mit"
 
 permission_query_conditions = {
 	"Quiz": "studywave.student_learning.doctype.quiz.quiz.has_permission",
+	"Course": "studywave.student_learning.doctype.course.course.get_courses",
 }
 #
 has_permission = {
