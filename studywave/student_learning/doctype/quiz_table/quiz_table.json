@@ -36,7 +36,7 @@
    "fieldname": "topic",
    "fieldtype": "Link",
    "label": "Topic",
-   "options": "Explantation"
+   "options": "Explanation"
   },
   {
    "fieldname": "explanation",
@@ -45,7 +45,7 @@
    "label": "Explanation"
   },
   {
-   "fetch_from": "topic.explaintion",
+   "fetch_from": "topic.explanation",
    "fieldname": "correct_explanation",
    "fieldtype": "Small Text",
    "label": "Correct Explanation"
@@ -55,7 +55,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-01 12:16:07.592050",
+ "modified": "2025-12-01 13:16:09.896399",
  "modified_by": "Administrator",
  "module": "Student Learning",
  "name": "Quiz Table",

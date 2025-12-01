@@ -1,13 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "QUIZ-.#####",
  "creation": "2025-11-26 13:21:04.598714",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_yqgu",
   "amended_from",
-  "coures",
+  "course",
   "lesson",
   "question_section",
   "quiz"
@@ -28,12 +29,6 @@
    "search_index": 1
   },
   {
-   "fieldname": "coures",
-   "fieldtype": "Link",
-   "label": "Coures",
-   "options": "Course"
-  },
-  {
    "fieldname": "lesson",
    "fieldtype": "Link",
    "label": "Lesson",
@@ -49,16 +44,23 @@
    "fieldtype": "Table",
    "label": "Quiz",
    "options": "Quiz Table"
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Course"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-28 17:49:17.971584",
+ "modified": "2025-12-01 12:59:02.953590",
  "modified_by": "Administrator",
  "module": "Student Learning",
  "name": "Quiz",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -84,17 +86,15 @@
    "report": 1,
    "role": "Mentor",
    "share": 1,
+   "submit": 1,
    "write": 1
   },
   {
-   "delete": 1,
-   "email": 1,
+   "create": 1,
    "export": 1,
-   "print": 1,
    "read": 1,
    "report": 1,
    "role": "Mentee",
-   "share": 1,
    "write": 1
   }
  ],
