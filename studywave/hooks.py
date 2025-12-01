@@ -147,9 +147,7 @@ app_license = "mit"
 
 # Scheduled Tasks
 # ---------------
-fixtures = [
-        "Server Script"
-    ]
+fixtures = ["Server Script"]
 # scheduler_events = {
 # 	"all": [
 # 		"studywave.tasks.all"
