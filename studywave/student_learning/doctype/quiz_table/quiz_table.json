@@ -9,9 +9,9 @@
   "question",
   "correct_answer",
   "answer",
-  "explaniation",
+  "explanation",
   "topic",
-  "correct_explaniation"
+  "correct_explanation"
  ],
  "fields": [
   {
@@ -33,29 +33,29 @@
    "options": "\nA.\nB.\nC.\nD."
   },
   {
-   "fieldname": "explaniation",
-   "fieldtype": "Small Text",
-   "in_list_view": 1,
-   "label": "Explaniation"
-  },
-  {
-   "fetch_from": "topic.explaintion",
-   "fieldname": "correct_explaniation",
-   "fieldtype": "Small Text",
-   "label": "Correct Explaniation"
-  },
-  {
    "fieldname": "topic",
    "fieldtype": "Link",
    "label": "Topic",
    "options": "Explantation"
+  },
+  {
+   "fieldname": "explanation",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Explanation"
+  },
+  {
+   "fetch_from": "topic.explaintion",
+   "fieldname": "correct_explanation",
+   "fieldtype": "Small Text",
+   "label": "Correct Explanation"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-11-28 12:29:47.569884",
+ "modified": "2025-12-01 12:16:07.592050",
  "modified_by": "Administrator",
  "module": "Student Learning",
  "name": "Quiz Table",

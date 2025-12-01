@@ -55,7 +55,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-28 13:13:23.467603",
+ "modified": "2025-11-28 17:49:17.971584",
  "modified_by": "Administrator",
  "module": "Student Learning",
  "name": "Quiz",
@@ -72,6 +72,29 @@
    "role": "System Manager",
    "share": 1,
    "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Mentor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Mentee",
+   "share": 1,
    "write": 1
   }
  ],
