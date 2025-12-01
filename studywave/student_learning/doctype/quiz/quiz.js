@@ -1,12 +1,13 @@
 frappe.ui.form.on("Quiz", {
 	refresh(frm) {
-		if (frappe.user.has_role("Mentee")) {
+		if (frappe.user.has_role("Mentee") && frappe.session.user != "Administrator") {
 			let grid = frm.get_field("quiz").grid;
 			grid.update_docfield_property("answer", "reqd", 1);
 			grid.update_docfield_property("explanation", "reqd", 1);
 			grid.update_docfield_property("correct_answer", "hidden", 1);
 			grid.update_docfield_property("topic", "hidden", 1);
 			grid.update_docfield_property("correct_explanation", "hidden", 1);
+			grid.update_docfield_property("question", "read_only", 1);
 		}
 	},
 });

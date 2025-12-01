@@ -117,13 +117,13 @@ app_license = "mit"
 # -----------
 # Permissions evaluated in scripted ways
 
-# permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
-# }
+permission_query_conditions = {
+	"Quiz": "studywave.student_learning.doctype.quiz.quiz.has_permission",
+}
 #
-# has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
-# }
+has_permission = {
+	"Quiz": "studywave.student_learning.doctype.quiz.quiz.has_permission_record",
+}
 
 # DocType Class
 # ---------------
