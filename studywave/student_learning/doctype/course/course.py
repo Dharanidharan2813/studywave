@@ -23,3 +23,16 @@ def get_courses(user=None, doctype=None):
 
 	if user == "Administrator":
 		return
+
+
+def access_course(user=None, doc=None):
+	if not user:
+		user = frappe.session.user
+
+	if "Mentor" in frappe.get_roles(user):
+		return True
+	else:
+		for row in doc.enroll:
+			if row.user_name == user:
+				return True
+		return False

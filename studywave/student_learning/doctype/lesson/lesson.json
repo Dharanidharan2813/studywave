@@ -27,8 +27,7 @@
    "fieldname": "course_name",
    "fieldtype": "Link",
    "label": "Course Name",
-   "options": "Course",
-   "unique": 1
+   "options": "Course"
   },
   {
    "fieldname": "practice_section",
@@ -45,7 +44,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-28 12:59:14.314442",
+ "modified": "2025-12-02 13:27:24.550457",
  "modified_by": "Administrator",
  "module": "Student Learning",
  "name": "Lesson",

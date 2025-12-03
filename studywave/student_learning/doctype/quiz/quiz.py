@@ -20,9 +20,11 @@ def has_permission(user=None):
 		return f"tabQuiz.user = '{user}'"
 
 
-def has_permission_record(doc, user):
+def has_permission_record(doc=None, user=None):
 	if not user:
 		user = frappe.session.user
 
-	if "Mentee" in frappe.get_roles(user):
+	if "Mentor" in frappe.get_roles(user) or user == "Administrator":
+		return True
+	else:
 		return doc.user == user

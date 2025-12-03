@@ -124,6 +124,7 @@ permission_query_conditions = {
 #
 has_permission = {
 	"Quiz": "studywave.student_learning.doctype.quiz.quiz.has_permission_record",
+	"Course": "studywave.student_learning.doctype.course.course.access_course",
 }
 
 # DocType Class
