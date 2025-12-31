@@ -30,7 +30,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Answer",
-   "options": "\nA.\nB.\nC.\nD."
+   "options": "\n1\n2\n3\n4"
   },
   {
    "fieldname": "topic",
@@ -48,15 +48,14 @@
    "fetch_from": "topic.explanation",
    "fieldname": "correct_explanation",
    "fieldtype": "Small Text",
-   "label": "Correct Explanation",
-   "read_only": 1
+   "label": "Correct Explanation"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-02 15:56:42.320076",
+ "modified": "2025-12-09 12:44:36.157157",
  "modified_by": "Administrator",
  "module": "Student Learning",
  "name": "Quiz Table",

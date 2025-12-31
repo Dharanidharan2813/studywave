@@ -1,22 +1,50 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-11-26 13:22:20.456666",
+ "creation": "2025-12-09 11:16:41.845795",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_jsoa"
+  "student",
+  "lesson",
+  "quiz",
+  "total_marks",
+  "obtained_marks"
  ],
  "fields": [
   {
-   "fieldname": "section_break_jsoa",
-   "fieldtype": "Section Break"
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "label": "Student",
+   "options": "User"
+  },
+  {
+   "fieldname": "quiz",
+   "fieldtype": "Table",
+   "label": "Quiz",
+   "options": "Quiz Table"
+  },
+  {
+   "fieldname": "total_marks",
+   "fieldtype": "Float",
+   "label": "Total Marks"
+  },
+  {
+   "fieldname": "obtained_marks",
+   "fieldtype": "Float",
+   "label": "Obtained marks"
+  },
+  {
+   "fieldname": "lesson",
+   "fieldtype": "Link",
+   "label": "Lesson",
+   "options": "Lesson"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-28 16:36:45.351544",
+ "modified": "2025-12-09 11:50:50.877143",
  "modified_by": "Administrator",
  "module": "Student Learning",
  "name": "User Log",
@@ -45,6 +73,15 @@
    "role": "Mentor",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Mentee",
+   "share": 1
   }
  ],
  "row_format": "Dynamic",

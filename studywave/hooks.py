@@ -149,7 +149,7 @@ has_permission = {
 
 # Scheduled Tasks
 # ---------------
-fixtures = ["Server Script"]
+fixtures = ["Server Script", "Web Page"]
 # scheduler_events = {
 # 	"all": [
 # 		"studywave.tasks.all"
